@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kavya Tiwari - Software Developer & Tech Enthusiast Portfolio">
+  <link rel="icon" type="image/svg+xml" href="./logo.svg" />
+  <title>Kavya Tiwari - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loading-screen">
+    <div class="loader"></div>
+  </div>
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <img src="./logo.svg" alt="KT Logo" class="logo-img">
+      <span class="logo-text">KT</span>
+    </div>
+  </nav>
+
+  <canvas id="bg"></canvas>
+
+  <main>
+    <header>
+      <h1 class="title hidden">Kavya Tiwari</h1>
+      <p class="subtitle hidden">Software Developer &amp; Tech Enthusiast</p> 
+    </header>
+
+    <section class="about hidden">
+      <h2>About Me</h2>
+      <p>
+        Currently in Class 12th (PCM), I'm a dedicated software developer and tech enthusiast with a comprehensive understanding of modern development practices. My journey spans across web development, game design, and artificial intelligence, consistently pushing boundaries and embracing new technologies.
+      </p>
+    </section>
+
+    <section class="skills hidden">
+      <h2>Technical Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-card hidden">
+          <h3>Web Development</h3>
+          <ul>
+            <li>HTML5 &amp; CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Responsive Design</li>
+            <li>Modern Web APIs</li>
+            <li>Cross-browser Compatibility</li>
+          </ul>
+        </div>
+        <div class="skill-card hidden">
+          <h3>Game Development</h3>
+          <ul>
+            <li>Unity 3D (C#)</li>
+            <li>Godot Engine</li>
+            <li>GDScript</li>
+            <li>Game Design Principles</li>
+            <li>3D Modeling &amp; Animation</li>
+            <li>Level Design</li>
+          </ul>
+        </div>
+        <div class="skill-card hidden">
+          <h3>Game Modding</h3>
+          <ul>
+            <li>Custom Game Modifications</li>
+            <li>Asset Creation</li>
+            <li>Scripting &amp; Plugins</li>
+            <li>Texture Modding</li>
+            <li>Game Balance</li>
+            <li>Community Engagement</li>
+          </ul>
+        </div>
+        <div class="skill-card hidden">
+          <h3>Design &amp; Creative</h3>
+          <ul>
+            <li>UI/UX Design</li>
+            <li>Blender</li>
+            <li>3D Design</li>
+            <li>Wireframing</li>
+            <li>Prototyping</li>
+            <li>Visual Design</li>
+          </ul>
+        </div>
+        <div class="skill-card hidden">
+          <h3>IoT &amp; Hardware</h3>
+          <ul>
+            <li>Arduino Programming</li>
+            <li>ESP8266/ESP32 Boards</li>
+            <li>Raspberry Pi Projects</li>
+            <li>PC Building &amp; Optimization</li>
+            <li>Hardware Diagnostics</li>
+            <li>Sensor Integration</li>
+          </ul>
+        </div>
+        <div class="skill-card hidden">
+          <h3>System &amp; Security</h3>
+          <ul>
+            <li>Python Development</li>
+            <li>Cybersecurity Practices</li>
+            <li>Linux (I use Arch btw 🚀)</li>
+            <li>Artificial Intelligence</li>
+            <li>Network Security</li>
+            <li>System Administration</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="hobbies hidden">
+      <h2>Interests &amp; Hobbies</h2>
+      <div class="hobby-grid">
+        <div class="hobby-item hidden">
+          <span class="hobby-icon">💻</span>
+          <span class="hobby-text">Coding</span>
+        </div>
+        <div class="hobby-item hidden">
+          <span class="hobby-icon">🎮</span>
+          <span class="hobby-text">Gaming</span>
+        </div>
+        <div class="hobby-item hidden">
+          <span class="hobby-icon">🎬</span>
+          <span class="hobby-text">Editing</span>
+        </div>
+        <div class="hobby-item hidden">
+          <span class="hobby-icon">📸</span>
+          <span class="hobby-text">Photography</span>
+        </div>
+        <div class="hobby-item hidden">
+          <span class="hobby-icon">🎥</span>
+          <span class="hobby-text">Videography</span>
+        </div>
+        <div class="hobby-item hidden">
+          <span class="hobby-icon">🎨</span>
+          <span class="hobby-text">3D Modeling</span>
+        </div>
+        <div class="hobby-item hidden">
+          <span class="hobby-icon">🔒</span>
+          <span class="hobby-text">Cybersecurity</span>
+        </div>
+        <div class="hobby-item hidden">
+          <span class="hobby-icon">🤖</span>
+          <span class="hobby-text">AI</span>
+        </div>
+        <div class="hobby-item hidden">
+          <span class="hobby-icon">🔧</span>
+          <span class="hobby-text">PC Building</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="hidden">
+      <div class="social-links">
+        <a href="https://www.instagram.com/kt.9t1/" target="_blank" rel="noopener noreferrer" class="social-link">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg" alt="Instagram" />
+        </a>
+      </div>
+      <p class="credits">Made with ❤️ by Kavya Tiwari</p>
+    </footer>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
